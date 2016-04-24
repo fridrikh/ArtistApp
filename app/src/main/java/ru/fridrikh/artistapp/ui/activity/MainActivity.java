@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         info.putExtra("genres", getGenres(position));
         info.putExtra("description", mList.get(position).getDescription());
         startActivity(info);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     private void initToolbar() {
